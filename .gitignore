@@ -1,0 +1,7 @@
+/.vscode/
+backend/node_modules/
+backend/*.env
+backend/campushub.db
+backend/build/
+backend/build-old/
+backend/main.cpp
