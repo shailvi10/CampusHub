@@ -12,14 +12,8 @@ const db = new Database("campushub.db");
 const PORT = 3000;
 const SECRET = process.env.JWT_SECRET || "change-this-development-secret";
 
- app.use(cors({
-    origin: [
-        "http://127.0.0.1:5500",
-        "http://localhost:5500"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"]
-}));
+  app.use(cors());
+app.use(express.json());
 
 app.use(express.json());
 
