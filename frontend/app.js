@@ -1,5 +1,5 @@
  
-const API_URL = "https://campushub-i27p.onrender.com/api";
+ const API_URL = "https://campushub-j27p.onrender.com/api";
 const $ = id => document.getElementById(id);
 
 const state = {
