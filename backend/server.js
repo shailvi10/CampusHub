@@ -13,10 +13,8 @@ const PORT = 3000;
 const SECRET = process.env.JWT_SECRET || "change-this-development-secret";
 
   app.use(cors());
+app.options(/.*/, cors());
 app.use(express.json());
-
-app.use(express.json());
-
 
 // Create database tables
 db.exec(`
