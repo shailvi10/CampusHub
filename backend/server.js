@@ -627,6 +627,9 @@ app.get("/api/announcements", authenticate, (req, res) => {
 
   res.json(announcements);
 });
+app.get("/api/health", (req, res) => {
+    res.json({ status: "OK", message: "CampusHub API is working" });
+});
 
 
 app.listen(PORT, () => {
